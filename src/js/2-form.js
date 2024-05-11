@@ -32,6 +32,9 @@ function getText() {
 
 }
 
+console.log(getText());
+
+
 form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
