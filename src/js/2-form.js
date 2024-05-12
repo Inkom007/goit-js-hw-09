@@ -32,7 +32,7 @@ function getText() {
 
 }
 
-console.log(getText());
+
 
 
 form.addEventListener("submit", handleSubmit);
@@ -43,6 +43,7 @@ function handleSubmit(event) {
   
     if (formData.email.trim() === '' || formData.message.trim( )=== '') {
         alert(`Fill please all fields`);
+        return;
     }
     console.log(formData);
    
