@@ -38,10 +38,12 @@ function handleSubmit(event) {
         return;
     }
 
-    console.log(formData);
+   console.log(JSON.parse(localStorage.getItem("feedback-form-state")));
     localStorage.removeItem("feedback-form-state");
+    
     Object.keys(formData).forEach(key => {
         formData[key] = '';
     });
+     
     form.reset();
 }
