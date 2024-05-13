@@ -38,6 +38,7 @@ function handleSubmit(event) {
         return;
     }
 
+    console.log(formData);
     localStorage.removeItem("feedback-form-state");
     Object.keys(formData).forEach(key => {
         formData[key] = '';
